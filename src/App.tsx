@@ -1,24 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import Title from "./components/Title";
+import Slider from "./components/slider";
+import Presentation from "./components/Presentation";
+import { Waypoint } from "react-waypoint";
+
+import "./App.scss";
 
 function App() {
+  const [isTitleRender, setIsTitleRender] = useState(false);
+  const [activeTitle, setActiveTitle] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="overflow-hidden">
+      {isTitleRender ? <Slider setActiveTitle={setActiveTitle} /> : <Title />}
+
+      {!isTitleRender && (
+        <Waypoint
+          onEnter={() => {
+            setIsTitleRender(true);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <div className="bg-black mt-20 h-20 w-full"></div>
+        </Waypoint>
+      )}
+
+      {isTitleRender && <Presentation activeSection={activeTitle} />}
     </div>
   );
 }
