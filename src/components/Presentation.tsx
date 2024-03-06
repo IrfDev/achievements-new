@@ -12,14 +12,15 @@ type Props = {
 const Presentation = ({ activeSection }: Props) => {
   let activeComponent = useMemo(() => {
     switch (activeSection) {
-      case 3:
-        return <Comments />;
-      case 2:
-        return <Register />;
       case 1:
         return <Share />;
+      case 2:
+        return <Register />;
+      case 3:
+        return <Comments />;
       case 4:
         return <Thanks />;
+
       case 0:
       default:
         return <Frontline />;

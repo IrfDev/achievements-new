@@ -6,40 +6,28 @@ type Props = {};
 const Comments = (props: Props) => {
   return (
     <>
-      <div className="class flex-col space-y-5 flex items-center pt-44">
+      <div className="class flex-col  space-y-5 flex items-center pt-44">
         <h1 className="text-center text-4xl text-white">
-          Social media on share section
+          In-stay registration
         </h1>
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/0.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/1.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/2.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/3.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/4.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/comments/5.png"
-          alt=""
-        />
+
+        <div className="flex flex-wrap w-full justify-around space-y-5 py-5 space-x-4">
+          <img
+            className="w-1/3 h-full rounded-xl shadow-md shadow-indigo-700 hover:shadow-indigo-500 transition-all duration-300 ease-in-out border-indigo-900 border"
+            src="/images/comments/0.png"
+            alt=""
+          />
+          <img
+            className="w-1/3 h-full rounded-xl shadow-md shadow-indigo-700 hover:shadow-indigo-500 transition-all duration-300 ease-in-out border-indigo-900 border"
+            src="/images/comments/1.png"
+            alt=""
+          />
+          <img
+            className="w-1/3 h-full rounded-xl shadow-md shadow-indigo-700 hover:shadow-indigo-500 transition-all duration-300 ease-in-out border-indigo-900 border"
+            src="/images/comments/2.png"
+            alt=""
+          />
+        </div>
       </div>
     </>
   );
