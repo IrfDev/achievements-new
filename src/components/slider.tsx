@@ -8,19 +8,19 @@ type Props = {
 
 const sections = [
   {
-    name: "Map v1",
+    name: "Announcements",
     image: "/images/headers/comment.png",
   },
   {
-    name: "1:1 chat",
+    name: "Collections",
     image: "/images/headers/register.png",
   },
   {
-    name: "Group chat",
+    name: "Guest web v3",
     image: "/images/headers/share.png",
   },
   {
-    name: "In-stay registration",
+    name: "Map v3",
     image: "/images/headers/dubai.png",
   },
   {
