@@ -7,7 +7,7 @@ const Frontline = (props: Props) => {
   return (
     <>
       <div className="class flex-col space-y-5 flex items-center pt-44">
-        <h1 className="text-center text-4xl text-white">Announcements</h1>
+        <h1 className="text-center text-4xl text-white">Activity RBS</h1>
         <img
           className="w-2/3 h-full rounded-xl"
           src="/images/frontline/0.png"

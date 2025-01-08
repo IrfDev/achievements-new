@@ -7,7 +7,7 @@ const Share = (props: Props) => {
   return (
     <>
       <div className="class flex-col space-y-5 flex items-center pt-44">
-        <h1 className="text-center text-4xl text-white">Collections</h1>
+        <h1 className="text-center text-4xl text-white">Table reservation</h1>
         <img
           className="w-2/3 h-full rounded-xl"
           src="/images/share/0.png"
@@ -26,11 +26,6 @@ const Share = (props: Props) => {
         <img
           className="w-2/3 h-full rounded-xl"
           src="/images/share/3.png"
-          alt=""
-        />
-        <img
-          className="w-2/3 h-full rounded-xl"
-          src="/images/share/4.png"
           alt=""
         />
       </div>
